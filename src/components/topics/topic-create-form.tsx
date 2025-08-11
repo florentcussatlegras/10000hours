@@ -49,7 +49,7 @@ export default function TopicCreateForm({ categories }: TopicCreateFormProps) {
 
                       <Input
                         name="title"
-                        label="title"
+                        label="Title"
                         labelPlacement="outside"
                         placeholder="Title"
                         isInvalid={!!formState.errors.title}

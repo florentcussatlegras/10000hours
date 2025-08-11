@@ -1,17 +1,19 @@
 "use client";
 
+import * as React from "react";
 import { ToastProvider } from "@heroui/react";
-import { NextUIProvider } from "@nextui-org/react";
+import {HeroUIProvider} from "@heroui/system";
 
 interface ProvidersProps {
   children: React.ReactNode;
 }
 
 export default function Providers({ children }: ProvidersProps) {
+
   return (
-      <NextUIProvider>
-        <ToastProvider />
-        {children}
-      </NextUIProvider>
+    <HeroUIProvider>
+      <ToastProvider />
+      {children}
+    </HeroUIProvider>
   );
 }
